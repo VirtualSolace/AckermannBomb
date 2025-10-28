@@ -1,9 +1,5 @@
 #include <unistd.h>
 
-int num_forks(int i){
-	return 1 << i;		// 2^i
-}
-
 int ackermann(int m, int n){
 	if(m == 0) return n+1;
 	if(n == 0) return ackermann(m-1, 1);
